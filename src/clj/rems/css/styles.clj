@@ -25,7 +25,7 @@
 
 (def content-width (u/px 1200))
 (def logo-height-menu (u/px 40))
-(def logo-height (u/px 150))
+(def logo-height (u/px 220))
 (def menu-height 56)
 (def bootstrap-media-breakpoints {:xs (u/px 576)
                                   :sm (u/px 768)
