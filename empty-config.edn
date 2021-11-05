@@ -1,4 +1,8 @@
 {
+ :enable-permissions-api true
+ :ga4gh-visa-private-key "test-data/example-private-key.jwk"
+ :ga4gh-visa-public-key "test-data/example-public-key.jwk"
+
  ;; Set entitlements-target
  :entitlements-target {:add "http://10.214.132.32:3333/auth0/add-roles"
                        :remove "http://10.214.132.32:3333/auth0/remove-roles"}

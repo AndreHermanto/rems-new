@@ -3,7 +3,6 @@
 
 version: '2'
 services:
-
   app:
     build:
       context: .
@@ -16,11 +15,10 @@ services:
       oidc-domain: rems-staging.au.auth0.com
       oidc-client-id: 7XdPR343v6oyJq3e7BIZKz91HHbfdeAa
       oidc-client-secret: KHuGK1hOkoIALn2AmVXWTG3nopqsxniZGPsYeqGpHA2-E2kh_61lql2AxwcKPviw
-      PUBLIC_URL: http://ec2-54-206-227-188.ap-southeast-2.compute.amazonaws.com/
-    mem_limit: 2000m
+      PUBLIC_URL: http://localhost:3000/
+      mem_limit: 2000m
     ports:
-      - "80:3000"
-
+      - "127.0.0.1:3000:3000"
   db:
     image: postgres:13
     environment:
@@ -28,4 +26,4 @@ services:
       POSTGRES_PASSWORD: remspassword
     mem_limit: 150m
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
